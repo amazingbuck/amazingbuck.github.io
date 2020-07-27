@@ -1,0 +1,1 @@
+# amazingbuck.github.io
