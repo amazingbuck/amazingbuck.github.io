@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    background-color: black;
+    height: 100%; 
+    user-select: none; /* отключение выделения на странице */
+    overflow: hidden; /* отключаем прокрутку на экране */
+}
+#timer{
+    position: absolute; /* позиционирование, которое задается с помощью координат */
+    right: 50px;
+    top: 0px;
+    text-align: center;
+    color: rgb(173, 169, 169);
+    font-size: 70px;
+    font-weight: bold; /* жирность шрифта */
+    text-shadow: 1px 1px 0 rgb(0, 0, 0); /* тень для шрифта */
+}
+#count{
+    z-index: 1; /* чем больше значение z-index, тем выше располагается элемент */
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(173, 169, 169);
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+}
+#shape{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.1s;
+    z-index: 5;
+    outline: none; /* свойство, которое удаляет невидимую границу */
+}
+#text{
+    z-index: 50; 
+    height: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow:  3px 3px 0 rgba(0, 0, 0, 0.7);   
+}
+#restart{
+    border: 3px solid white;
+    background: transparent; /* transparent - делает фон прозрачным */
+    color: white;
+    text-shadow:  3px 3px 0 rgba(0, 0, 0, 0.7);   
+    width: 90%;
+    max-width: 220px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
